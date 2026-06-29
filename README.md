@@ -1,8 +1,8 @@
-\# 🎬 StreamDB - Plataforma de Streaming
+\# 🎬 StreamDB - Plataforma de Streaming "PELISXMAX"
 
 
 
-Plataforma de streaming estilo Netflix desarrollada como proyecto académico en Instituto Tecsup.
+Plataforma de streaming estilo Netflix desarrollada como proyecto académico.
 
 Combina una arquitectura de datos híbrida con SQL Server (datos relacionales) y MongoDB (datos flexibles),
 
@@ -138,9 +138,5 @@ o actualiza el nombre directamente en `templates/home.html`.
 
 \- \*\*Walter Garcia\*\* - Desarrollo principal
 
-\- \*\*Katherine Muñoz\*\* - Colaboradora
-
-
-
-\## 🏫 Instituto Tecsup - Big Data y Data Science
+ - Big Data y Data Science
 
