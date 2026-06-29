@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elige tu Plan — PELISXMAX</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <style>
+    .suscripcion-container {
+      min-height: 100vh;
+      padding: 100px 48px 60px;
+      background: radial-gradient(ellipse at center, #1a0033 0%, #050505 70%);
+    }
+    .suscripcion-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .suscripcion-header h2 {
+      font-size: 2rem;
+      color: #e0e0e0;
+      margin-bottom: 8px;
+    }
+    .suscripcion-header p {
+      color: #888;
+      font-size: 1rem;
+    }
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .plan-card {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .plan-card:hover {
+      border-color: #ff4d00;
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(255,77,0,0.2);
+    }
+    .plan-card.seleccionado {
+      border-color: #ff4d00;
+      background: #1a0a00;
+      box-shadow: 0 0 30px rgba(255,77,0,0.3);
+    }
+    .plan-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff4d00;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+    .plan-nombre {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #e0e0e0;
+      margin-bottom: 8px;
+    }
+    .plan-precio {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ff4d00;
+      margin-bottom: 4px;
+    }
+    .plan-precio span {
+      font-size: 1rem;
+      color: #888;
+      font-weight: 400;
+    }
+    .plan-detalle {
+      color: #888;
+      font-size: 0.85rem;
+      margin: 16px 0;
+      line-height: 1.8;
+    }
+    .plan-calidad {
+      display: inline-block;
+      background: #5500ff33;
+      color: #a080ff;
+      border: 1px solid #5500ff;
+      padding: 4px 14px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+    .btn-elegir {
+      width: 100%;
+      background: #333;
+      color: #e0e0e0;
+      border: 1px solid #444;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .plan-card.seleccionado .btn-elegir {
+      background: #ff4d00;
+      border-color: #ff4d00;
+      color: #fff;
+    }
+    .btn-confirmar {
+      display: block;
+      margin: 40px auto 0;
+      background: #ff4d00;
+      color: #fff;
+      border: none;
+      padding: 16px 60px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-confirmar:hover { background: #ff6a00; }
+    .btn-confirmar:disabled {
+      background: #333;
+      color: #666;
+      cursor: not-allowed;
+    }
+    .mensaje-exito {
+      display: none;
+      background: #0a2a0a;
+      border: 1px solid #2a5a2a;
+      color: #4caf50;
+      padding: 16px;
+      border-radius: 6px;
+      text-align: center;
+      margin: 24px auto;
+      max-width: 500px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">PELISXMAX</div>
+    <div class="nav-links">
+      <a href="/home">Inicio</a>
+    </div>
+  </nav>
+
+  <div class="suscripcion-container">
+    <div class="suscripcion-header">
+      <h2>Elige tu Plan</h2>
+      <p>Sin contratos. Cancela cuando quieras.</p>
+    </div>
+
+    <div class="planes-grid" id="planes-grid">
+      <!-- Planes cargados desde SQL Server -->
+    </div>
+
+    <button class="btn-confirmar" id="btn-confirmar" disabled onclick="confirmarSuscripcion()">
+      Confirmar suscripción
+    </button>
+
+    <div class="mensaje-exito" id="mensaje-exito">
+      ✅ ¡Suscripción activada! Redirigiendo al catálogo...
+    </div>
+  </div>
+
+  <script>
+    // Obtener idUsuario de la URL
+    const params     = new URLSearchParams(window.location.search);
+    const idUsuario  = params.get('idUsuario') || 1;
+    let   planElegido = null;
+
+    // Cargar planes desde SQL Server
+    async function cargarPlanes() {
+      const response = await fetch('/planes');
+      const planes   = await response.json();
+
+      const grid = document.getElementById('planes-grid');
+      planes.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'plan-card';
+        card.innerHTML = `
+          ${p.idPlan === 3 ? '<div class="plan-badge">⭐ Popular</div>' : ''}
+          <div class="plan-nombre">${p.Descripcion}</div>
+          <div class="plan-precio">S/ ${parseFloat(p.Precio).toFixed(2)}<span>/mes</span></div>
+          <div class="plan-detalle">
+            📺 ${p.CantPantallas} pantalla${p.CantPantallas > 1 ? 's' : ''}<br>
+            🎬 Calidad ${p.CalidadMax}
+          </div>
+          <span class="plan-calidad">${p.CalidadMax}</span>
+          <button class="btn-elegir" onclick="elegirPlan(${p.idPlan}, '${p.Descripcion}', this)">
+            Elegir plan
+          </button>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function elegirPlan(idPlan, nombre, btn) {
+      // Quitar selección anterior
+      document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('seleccionado'));
+      // Marcar el seleccionado
+      btn.closest('.plan-card').classList.add('seleccionado');
+      planElegido = idPlan;
+      document.getElementById('btn-confirmar').disabled = false;
+    }
+
+    async function confirmarSuscripcion() {
+      if (!planElegido) return;
+
+      try {
+        const response = await fetch('/suscripcion/add', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            idUsuario : parseInt(idUsuario),
+            idPlan    : planElegido,
+            fechaSusc : new Date().toISOString().split('T')[0],
+            metodoPago: 'Yape'
+          })
+        });
+
+        const resultado = await response.json();
+        document.getElementById('mensaje-exito').style.display = 'block';
+        document.getElementById('btn-confirmar').disabled = true;
+
+        setTimeout(() => {
+          window.location.href = '/home';
+        }, 2500);
+
+      } catch (error) {
+        alert('Error al procesar la suscripción.');
+      }
+    }
+
+    cargarPlanes();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+idTipEven,Descrip,Categoria,Plataforma,Importancia
+1,Reproduccion iniciada,Reproduccion,Web,Alta
+2,Reproduccion pausada,Reproduccion,Web,Media
+3,Reproduccion completada,Reproduccion,Smart TV,Alta
+4,Busqueda realizada,Navegacion,Movil,Baja
+5,Pelicula agregada a lista,Lista,Web,Media
+6,Calificacion enviada,Interaccion,Web,Media
+7,Descarga iniciada,Descarga,Movil,Alta
+8,Sesion iniciada,Sesion,Smart TV,Alta

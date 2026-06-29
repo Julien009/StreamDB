@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entornos virtuales
+venv/
+env/
+.env
+
+# Video pesado
+static/video/
+
+# Archivos temporales Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PELISXMAX</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">PELISXMAX</div>
+    <div class="nav-links">
+      <a href="/home">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="/registro">Registrarse</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>El universo del cine<br>en tus manos</h1>
+      <p>Más de 60 títulos entre películas y series</p>
+      <a href="#catalogo" class="btn-hero">Ver Catálogo</a>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="filtros" id="catalogo">
+    <h2>Catálogo</h2>
+
+    <!-- BUSCADOR -->
+<div class="buscador-container">
+  <input 
+    type="text" 
+    id="buscador" 
+    placeholder="🔍 Buscar película o serie..."
+    oninput="buscarEnVivo(this.value)"
+onkeydown="if(event.key==='Enter') registrarBusqueda(this.value)"
+  >
+</div>
+    <div class="botones-filtro">
+      <button class="filtro-btn activo" onclick="filtrar('todos')">Todos</button>
+      <button class="filtro-btn" onclick="filtrar('Accion')">Acción</button>
+      <button class="filtro-btn" onclick="filtrar('Animacion')">Animación</button>
+      <button class="filtro-btn" onclick="filtrar('Drama')">Drama</button>
+      <button class="filtro-btn" onclick="filtrar('Fantasia')">Fantasía</button>
+      <button class="filtro-btn" onclick="filtrar('Crimen')">Crimen</button>
+      <button class="filtro-btn" onclick="filtrar('Thriller')">Thriller</button>
+      <button class="filtro-btn" onclick="filtrar('Comedia')">Comedia</button>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="catalogo-grid" id="grid-peliculas">
+    <!-- Cards cargadas por JS -->
+  </section>
+
+  <!-- MODAL REPRODUCTOR -->
+  <div id="modal-reproductor" class="modal oculto">
+    <div class="modal-contenido">
+      <button class="cerrar-modal" onclick="cerrarReproductor()">✕</button>
+      <h3 id="titulo-pelicula">Título</h3>
+      <video id="video-player" controls >
+        <source src="{{ url_for('static', filename='video/big_buck_bunny.mp4') }}" type="video/mp4">
+      </video>
+      <div class="evento-status" id="evento-status"></div>
+      <!-- FORMULARIO DE RESEÑA -->
+<div id="form-resena" style="display:none; margin-top:16px;">
+  <p style="color:#888; font-size:0.9rem; margin-bottom:8px;">¿Qué te pareció?</p>
+  <textarea id="texto-resena" rows="3" placeholder="Escribe tu reseña..." 
+    style="width:100%; background:#1a1a1a; border:1px solid #333; color:#e0e0e0; 
+    padding:10px; border-radius:6px; font-size:0.9rem; resize:none;"></textarea>
+  <div style="display:flex; gap:8px; margin-top:8px;">
+    <select id="calificacion" style="background:#1a1a1a; border:1px solid #333; 
+      color:#e0e0e0; padding:8px 12px; border-radius:6px; font-size:0.9rem;">
+      <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+      <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+      <option value="3">⭐⭐⭐ Regular</option>
+      <option value="2">⭐⭐ Malo</option>
+      <option value="1">⭐ Pésimo</option>
+    </select>
+    <button onclick="enviarResena()" style="background:#ff4d00; color:#fff; 
+      border:none; padding:8px 20px; border-radius:6px; font-weight:700; cursor:pointer;">
+      Enviar reseña
+    </button>
+  </div>
+  <div id="resena-status" style="display:none; margin-top:8px; padding:8px 12px; 
+    background:#0a2a0a; border:1px solid #2a5a2a; color:#4caf50; 
+    border-radius:6px; font-size:0.85rem;"></div>
+</div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>

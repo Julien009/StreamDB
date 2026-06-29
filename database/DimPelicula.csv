@@ -1,0 +1,61 @@
+idPelicula,Nombre,Genero,Tipo,Duracion,AnioEstreno
+1,El Senor de los Anillos: La Comunidad del Anillo,Fantasia,Pelicula,178,2001
+2,El Senor de los Anillos: Las Dos Torres,Fantasia,Pelicula,179,2002
+3,El Senor de los Anillos: El Retorno del Rey,Fantasia,Pelicula,201,2003
+4,El Padrino,Crimen,Pelicula,175,1972
+5,El Padrino II,Crimen,Pelicula,202,1974
+6,Caballero Sin Espada,Drama,Pelicula,129,1939
+7,Sargento York,Drama,Pelicula,134,1941
+8,12 del Patibulo,Accion,Pelicula,150,1967
+9,Shrek 2,Animacion,Pelicula,93,2004
+10,Kung Fu Panda,Animacion,Pelicula,92,2008
+11,Toy Story,Animacion,Pelicula,81,1995
+12,El Hobbit: Un Viaje Inesperado,Fantasia,Pelicula,169,2012
+13,Braveheart,Drama,Pelicula,178,1995
+14,Gladiador,Accion,Pelicula,155,2000
+15,El Padrino III,Crimen,Pelicula,162,1990
+16,Scarface,Crimen,Pelicula,170,1983
+17,Toy Story 2,Animacion,Pelicula,92,1999
+18,Toy Story 3,Animacion,Pelicula,103,2010
+19,Kung Fu Panda 2,Animacion,Pelicula,90,2011
+20,Shrek,Animacion,Pelicula,90,2001
+21,Shrek Tercero,Animacion,Pelicula,93,2007
+22,Up,Animacion,Pelicula,96,2009
+23,WALL-E,Animacion,Pelicula,98,2008
+24,Apocalypto,Accion,Pelicula,139,2006
+25,Patton,Drama,Pelicula,172,1970
+26,La Delgada Linea Roja,Drama,Pelicula,170,1998
+27,Salvar al Soldado Ryan,Drama,Pelicula,169,1998
+28,El Gran Escape,Accion,Pelicula,172,1963
+29,Coraline,Animacion,Pelicula,100,2009
+30,Como Entrenar a tu Dragon,Animacion,Pelicula,98,2010
+31,Mentes Criminales,Crimen,Serie,43,2005
+32,Dexter,Thriller,Serie,50,2006
+33,Daredevil,Accion,Serie,54,2015
+34,Breaking Bad,Drama,Serie,47,2008
+35,Juego de Tronos,Fantasia,Serie,57,2011
+36,The Big Bang Theory,Comedia,Serie,22,2007
+37,Hora de Aventura,Animacion,Serie,11,2010
+38,Un Show Mas,Animacion,Serie,11,2010
+39,True Detective,Thriller,Serie,55,2014
+40,Mindhunter,Crimen,Serie,52,2017
+41,Ozark,Thriller,Serie,60,2017
+42,Peaky Blinders,Crimen,Serie,60,2013
+43,Better Call Saul,Drama,Serie,46,2015
+44,Narcos,Crimen,Serie,49,2015
+45,The Punisher,Accion,Serie,55,2017
+46,Jessica Jones,Accion,Serie,50,2015
+47,How I Met Your Mother,Comedia,Serie,22,2005
+48,Friends,Comedia,Serie,22,1994
+49,Seinfeld,Comedia,Serie,22,1989
+50,Juego de Tronos: La Casa del Dragon,Fantasia,Serie,60,2022
+51,The Witcher,Fantasia,Serie,60,2019
+52,Gravity Falls,Animacion,Serie,22,2012
+53,Rick y Morty,Animacion,Serie,22,2013
+54,Bob Esponja,Animacion,Serie,11,1999
+55,Futurama,Animacion,Serie,22,1999
+56,Sherlock,Misterio,Serie,88,2010
+57,Hannibal,Thriller,Serie,44,2013
+58,Lucifer,Fantasia,Serie,43,2016
+59,Succession,Drama,Serie,60,2018
+60,Squid Game,Thriller,Serie,60,2021

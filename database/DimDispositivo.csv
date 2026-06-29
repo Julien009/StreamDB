@@ -1,0 +1,9 @@
+idDispositivo,TipoDispositivo,SistemaOperativo
+1,Smart TV,Tizen
+2,Movil,Android
+3,Movil,iOS
+4,PC,Windows
+5,PC,macOS
+6,Tablet,Android
+7,Tablet,iPadOS
+99,Desconocido,

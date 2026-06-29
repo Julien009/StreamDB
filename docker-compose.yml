@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  flask_app:
+    build: .
+    container_name: streamdb_flask
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - DOCKER_ENV=true
+      - MONGO_URI=mongodb://host.docker.internal:27017/
+    volumes:
+      - .:/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

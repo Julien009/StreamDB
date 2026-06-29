@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050505;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* Canvas de partículas */
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Explosión */
+#explosion {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffcc00, #ff4d00, #ff0000, transparent);
+  z-index: 2;
+  opacity: 0;
+  animation: explotar 0.8s ease-out 2.5s forwards;
+}
+
+@keyframes explotar {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+  50%  { transform: translate(-50%, -50%) scale(4); opacity: 0.9; }
+  100% { transform: translate(-50%, -50%) scale(8); opacity: 0; }
+}
+
+/* Flash de impacto */
+#flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 3;
+  opacity: 0;
+  animation: flashear 0.4s ease-out 3.2s forwards;
+}
+
+@keyframes flashear {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Logo container */
+#logo-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  z-index: 4;
+  opacity: 0;
+  animation: revelarLogo 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.5s forwards;
+}
+
+@keyframes revelarLogo {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  60%  { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* Logo texto */
+#logo {
+  font-size: clamp(3rem, 10vw, 8rem);
+  color: #e0e0e0;
+  letter-spacing: 8px;
+  text-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #c0c0c0,
+    0 0 40px #a0a0a0,
+    2px 2px 0px #5500ff,
+    -2px -2px 0px #ff4d00;
+  animation: pulsarLogo 1.5s ease-in-out 3.5s infinite alternate;
+}
+
+@keyframes pulsarLogo {
+  0%   { text-shadow: 0 0 10px #fff, 0 0 20px #c0c0c0, 0 0 40px #a0a0a0, 2px 2px 0px #5500ff, -2px -2px 0px #ff4d00; }
+  100% { text-shadow: 0 0 20px #fff, 0 0 40px #e0e0e0, 0 0 80px #c0c0c0, 3px 3px 0px #5500ff, -3px -3px 0px #ff4d00; }
+}
+
+/* Tagline */
+#tagline {
+  color: #888;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  letter-spacing: 4px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  animation: fadeTagline 1s ease 4s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeTagline {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Shake al impacto */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  20%       { transform: translate(-8px, 8px); }
+  40%       { transform: translate(8px, -8px); }
+  60%       { transform: translate(-6px, 6px); }
+  80%       { transform: translate(6px, -6px); }
+}
+
+.shake {
+  animation: shake 0.4s ease 3.2s;
+}
