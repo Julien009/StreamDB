@@ -1,61 +1,97 @@
-idUsuario,Nombre,ApePat,ApeMat,Correo,Distrito,FecAlta,FecBaja
-1,Carlos,Quispe,Mamani,carlos.quispe@gmail.com,Surquillo,2022-06-04,
-2,Maria,Torres,Llanos,maria.torres@gmail.com,San Isidro,2022-03-16,
-3,Jose,Mendoza,Ramos,jose.mendoza@gmail.com,La Molina,2023-01-10,
-4,Ana,Flores,Gutierrez,ana.flores@gmail.com,Ate,2022-08-08,2023-05-26
-5,Luis,Vargas,Salas,luis.vargas@gmail.com,Callao,2022-03-13,
-6,Rosa,Castillo,Perez,rosa.castillo@gmail.com,Villa Maria,2023-03-11,2024-01-29
-7,Pedro,Huanca,Ccopa,pedro.huanca@gmail.com,La Molina,2022-08-17,
-8,Sofia,Ramirez,Vega,sofia.ramirez@gmail.com,San Isidro,2023-08-14,
-9,Miguel,Paredes,Cruz,miguel.paredes@gmail.com,San Isidro,2022-08-15,2023-09-18
-10,Lucia,Espinoza,Chavez,lucia.espinoza@gmail.com,Barranco,2022-10-24,
-11,Diego,Morales,Rios,diego.morales@gmail.com,Villa Maria,2022-05-01,
-12,Valeria,Navarro,Ponce,valeria.navarro@gmail.com,Villa Maria,2024-04-15,
-13,Fernando,Cabrera,Tello,fernando.cabrera@gmail.com,La Molina,2023-08-19,
-14,Gabriela,Santos,Meza,gabriela.santos@gmail.com,Jesus Maria,2023-01-17,2024-01-14
-15,Roberto,Pacheco,Luna,roberto.pacheco@gmail.com,Surco,2023-08-01,2024-03-20
-16,Patricia,Gutierrez,Bautista,patricia.gutierrez@gmail.com,San Martin de Porres,2023-11-28,
-17,Jorge,Salinas,Cano,jorge.salinas@gmail.com,Surquillo,2023-04-22,
-18,Carmen,Rojas,Medina,carmen.rojas@gmail.com,Los Olivos,2023-01-06,
-19,Manuel,Herrera,Quispe,manuel.herrera@gmail.com,Pueblo Libre,2023-12-17,
-20,Elena,Peres,Torres,elena.peres@gmail.com,Surco,2023-08-12,
-21,Victor,Tapia,Mendoza,victor.tapia@gmail.com,San Martin de Porres,2024-06-15,
-22,Sandra,Cruz,Flores,sandra.cruz@gmail.com,Los Olivos,2022-10-22,
-23,Ricardo,Meza,Vargas,ricardo.meza@gmail.com,Surco,2022-05-01,
-24,Monica,Vega,Castillo,monica.vega@gmail.com,Pueblo Libre,2024-02-15,
-25,Eduardo,Rios,Huanca,eduardo.rios@gmail.com,San Martin de Porres,2023-03-08,2024-02-22
-26,Claudia,Luna,Ramirez,claudia.luna@gmail.com,Surco,2024-02-22,
-27,Andres,Salas,Paredes,andres.salas@gmail.com,Surquillo,2022-12-15,
-28,Natalia,Choque,Espinoza,natalia.choque@gmail.com,San Martin de Porres,2023-08-17,
-29,Sergio,Mamani,Morales,sergio.mamani@gmail.com,Surco,2024-05-10,2025-01-14
-30,Paola,Condori,Navarro,paola.condori@gmail.com,San Martin de Porres,2023-12-15,
-31,Raul,Ramos,Cabrera,raul.ramos@gmail.com,San Isidro,2024-01-19,
-32,Diana,Llanos,Santos,diana.llanos@gmail.com,Los Olivos,2022-10-19,
-33,Hugo,Tello,Pacheco,hugo.tello@gmail.com,San Miguel,2022-01-24,
-34,Vanessa,Ponce,Salinas,vanessa.ponce@gmail.com,San Miguel,2022-06-22,
-35,Oscar,Calle,Rojas,oscar.calle@gmail.com,San Martin de Porres,2022-03-02,
-36,Roxana,Benitez,Herrera,roxana.benitez@gmail.com,Chorrillos,2022-05-13,
-37,Ivan,Montes,Tapia,ivan.montes@gmail.com,Magdalena,2023-02-05,
-38,Karina,Campos,Montes,karina.campos@gmail.com,San Martin de Porres,2022-03-24,
-39,Martin,Aguirre,Campos,martin.aguirre@gmail.com,Magdalena,2023-07-17,
-40,Beatriz,Palomino,Aguirre,beatriz.palomino@gmail.com,Barranco,2024-04-18,
-41,David,Soto,Palomino,david.soto@gmail.com,Villa Maria,2022-10-13,
-42,Veronica,Fuentes,Soto,veronica.fuentes@gmail.com,San Miguel,2023-12-01,
-43,Cesar,Reyes,Fuentes,cesar.reyes@gmail.com,Lince,2022-06-04,2023-01-08
-44,Lorena,Bravo,Reyes,lorena.bravo@gmail.com,Lince,2023-11-06,
-45,Pablo,Ortiz,Bravo,pablo.ortiz@gmail.com,San Martin de Porres,2024-05-01,
-46,Susana,Lozano,Ortiz,susana.lozano@gmail.com,San Borja,2022-10-16,2023-07-30
-47,Alejandro,Pardo,Lozano,alejandro.pardo@gmail.com,Villa Maria,2023-01-14,
-48,Pilar,Arce,Pardo,pilar.arce@gmail.com,Surquillo,2022-05-09,
-49,Rodrigo,Delgado,Arce,rodrigo.delgado@gmail.com,Ate,2023-09-25,
-50,Mariana,Moran,Delgado,mariana.moran@gmail.com,San Isidro,2023-04-13,
-51,Felipe,Cisneros,Moran,felipe.cisneros@gmail.com,Villa Maria,2023-02-06,
-52,Teresa,Lazo,Cisneros,teresa.lazo@gmail.com,Magdalena,2022-04-17,
-53,Nicolas,Diaz,Lazo,nicolas.diaz@gmail.com,Magdalena,2022-03-05,
-54,Jessica,Perez,Diaz,jessica.perez@gmail.com,Jesus Maria,2023-03-28,
-55,Ernesto,Alvarado,Alvarado,ernesto.alvarado@gmail.com,Surquillo,2023-09-08,2024-03-06
-56,Carla,Coronel,Coronel,carla.coronel@gmail.com,Barranco,2023-07-04,2024-04-02
-57,Arturo,Suarez,Suarez,arturo.suarez@gmail.com,Miraflores,2022-03-14,
-58,Silvia,Bernales,Bernales,silvia.bernales@gmail.com,Magdalena,2022-06-02,
-59,Julio,Acosta,Acosta,julio.acosta@gmail.com,San Miguel,2023-09-09,
-60,Andrea,Villanueva,Villanueva,andrea.villanueva@gmail.com,La Molina,2022-04-29,
+﻿1;Walter;Garcia;Mamani;carlos.quispe@gmail.com;Surquillo;2022-06-04;NULL
+2;Maria;Torres;Llanos;maria.torres@gmail.com;San Isidro;2022-03-16;NULL
+3;Jose;Mendoza;Ramos;jose.mendoza@gmail.com;La Molina;2023-01-10;NULL
+4;Ana;Flores;Gutierrez;ana.flores@gmail.com;Ate;2022-08-08;2023-05-26
+5;Luis;Vargas;Salas;luis.vargas@gmail.com;Callao;2022-03-13;NULL
+6;Rosa;Castillo;Perez;rosa.castillo@gmail.com;Villa Maria;2023-03-11;2024-01-29
+7;kumachi;Sanchez;Ccopa;kob.sza@gmail.com;La Molina;2022-08-17;NULL
+8;Sofia;Ramirez;Vega;sofia.ramirez@gmail.com;San Isidro;2023-08-14;NULL
+9;Miguel;Paredes;Cruz;miguel.paredes@gmail.com;San Isidro;2022-08-15;2023-09-18
+10;Lucia;Espinoza;Chavez;lucia.espinoza@gmail.com;Barranco;2022-10-24;NULL
+11;Diego;Morales;Rios;diego.morales@gmail.com;Villa Maria;2022-05-01;NULL
+12;Valeria;Navarro;Ponce;valeria.navarro@gmail.com;Villa Maria;2024-04-15;NULL
+13;Fernando;Cabrera;Tello;fernando.cabrera@gmail.com;La Molina;2023-08-19;NULL
+14;Gabriela;Santos;Meza;gabriela.santos@gmail.com;Jesus Maria;2023-01-17;2024-01-14
+15;Roberto;Pacheco;Luna;roberto.pacheco@gmail.com;Surco;2023-08-01;2024-03-20
+16;Patricia;Gutierrez;Bautista;patricia.gutierrez@gmail.com;San Martin de Porres;2023-11-28;NULL
+17;Jorge;Salinas;Cano;jorge.salinas@gmail.com;Surquillo;2023-04-22;NULL
+18;Carmen;Rojas;Medina;carmen.rojas@gmail.com;Los Olivos;2023-01-06;NULL
+19;Manuel;Herrera;Quispe;manuel.herrera@gmail.com;Pueblo Libre;2023-12-17;NULL
+20;Elena;Peres;Torres;elena.peres@gmail.com;Surco;2023-08-12;NULL
+21;Victor;Tapia;Mendoza;victor.tapia@gmail.com;San Martin de Porres;2024-06-15;NULL
+22;Sandra;Cruz;Flores;sandra.cruz@gmail.com;Los Olivos;2022-10-22;NULL
+23;Ricardo;Meza;Vargas;ricardo.meza@gmail.com;Surco;2022-05-01;NULL
+24;Monica;Vega;Castillo;monica.vega@gmail.com;Pueblo Libre;2024-02-15;NULL
+25;Eduardo;Rios;Huanca;eduardo.rios@gmail.com;San Martin de Porres;2023-03-08;2024-02-22
+26;Claudia;Luna;Ramirez;claudia.luna@gmail.com;Surco;2024-02-22;NULL
+27;Andres;Salas;Paredes;andres.salas@gmail.com;Surquillo;2022-12-15;NULL
+28;Natalia;Choque;Espinoza;natalia.choque@gmail.com;San Martin de Porres;2023-08-17;NULL
+29;Sergio;Mamani;Morales;sergio.mamani@gmail.com;Surco;2024-05-10;2025-01-14
+30;Paola;Condori;Navarro;paola.condori@gmail.com;San Martin de Porres;2023-12-15;NULL
+31;Raul;Ramos;Cabrera;raul.ramos@gmail.com;San Isidro;2024-01-19;NULL
+32;Diana;Llanos;Santos;diana.llanos@gmail.com;Los Olivos;2022-10-19;NULL
+33;Hugo;Tello;Pacheco;hugo.tello@gmail.com;San Miguel;2022-01-24;NULL
+34;Vanessa;Ponce;Salinas;vanessa.ponce@gmail.com;San Miguel;2022-06-22;NULL
+35;Oscar;Calle;Rojas;oscar.calle@gmail.com;San Martin de Porres;2022-03-02;NULL
+36;Roxana;Benitez;Herrera;roxana.benitez@gmail.com;Chorrillos;2022-05-13;NULL
+37;Ivan;Montes;Tapia;ivan.montes@gmail.com;Magdalena;2023-02-05;NULL
+38;Karina;Campos;Montes;karina.campos@gmail.com;San Martin de Porres;2022-03-24;NULL
+39;Martin;Aguirre;Campos;martin.aguirre@gmail.com;Magdalena;2023-07-17;NULL
+40;Beatriz;Palomino;Aguirre;beatriz.palomino@gmail.com;Barranco;2024-04-18;NULL
+41;David;Soto;Palomino;david.soto@gmail.com;Villa Maria;2022-10-13;NULL
+42;Veronica;Fuentes;Soto;veronica.fuentes@gmail.com;San Miguel;2023-12-01;NULL
+43;Cesar;Reyes;Fuentes;cesar.reyes@gmail.com;Lince;2022-06-04;2023-01-08
+44;Lorena;Bravo;Reyes;lorena.bravo@gmail.com;Lince;2023-11-06;NULL
+45;Pablo;Ortiz;Bravo;pablo.ortiz@gmail.com;San Martin de Porres;2024-05-01;NULL
+46;Susana;Lozano;Ortiz;susana.lozano@gmail.com;San Borja;2022-10-16;2023-07-30
+47;Alejandro;Pardo;Lozano;alejandro.pardo@gmail.com;Villa Maria;2023-01-14;NULL
+48;Pilar;Arce;Pardo;pilar.arce@gmail.com;Surquillo;2022-05-09;NULL
+49;Rodrigo;Delgado;Arce;rodrigo.delgado@gmail.com;Ate;2023-09-25;NULL
+50;Mariana;Moran;Delgado;mariana.moran@gmail.com;San Isidro;2023-04-13;NULL
+51;Felipe;Cisneros;Moran;felipe.cisneros@gmail.com;Villa Maria;2023-02-06;NULL
+52;Teresa;Lazo;Cisneros;teresa.lazo@gmail.com;Magdalena;2022-04-17;NULL
+53;Nicolas;Diaz;Lazo;nicolas.diaz@gmail.com;Magdalena;2022-03-05;NULL
+54;Jessica;Perez;Diaz;jessica.perez@gmail.com;Jesus Maria;2023-03-28;NULL
+55;Ernesto;Alvarado;Alvarado;ernesto.alvarado@gmail.com;Surquillo;2023-09-08;2024-03-06
+56;Carla;Coronel;Coronel;carla.coronel@gmail.com;Barranco;2023-07-04;2024-04-02
+57;Arturo;Suarez;Suarez;arturo.suarez@gmail.com;Miraflores;2022-03-14;NULL
+58;Silvia;Bernales;Bernales;silvia.bernales@gmail.com;Magdalena;2022-06-02;NULL
+59;Julio;Acosta;Acosta;julio.acosta@gmail.com;San Miguel;2023-09-09;NULL
+60;Andrea;Villanueva;Villanueva;andrea.villanueva@gmail.com;La Molina;2022-04-29;NULL
+61;Maryorid;Obregon;NULL;adaia.t2@gmail.com;San Miguel;2026-05-21;NULL
+62;chiclebot;cervatillo;NULL;chcerva@hda.com;San Isidro;2026-05-29;NULL
+63;conde;limonagrio;NULL;datac@gmail.com;San Borja;2026-05-29;NULL
+64;rick;sanchez;NULL;morty@smith.pe;Miraflores;2026-05-29;NULL
+65;Paolo;Guerrero;NULL;paolin09@gmail.com;Pueblo Libre;2026-06-14;NULL
+66;eminem;stanford;NULL;angel69@tmail.com;Magdalena;2026-06-30;NULL
+1001;Andrea;Quispe;Torres;andrea.quispe1001@mail.com;Miraflores;2026-04-20;NULL
+1002;Renzo;Huaman;Diaz;renzo.huaman1002@mail.com;San Juan de Lurigancho;2026-04-22;NULL
+1003;Fiorella;Rojas;Mendez;fiorella.rojas1003@mail.com;Surco;2026-04-23;NULL
+1004;Diego;Flores;NULL;diego.flores1004@mail.com;Comas;2026-04-25;2026-06-10
+1005;Camila;Vargas;Soto;camila.vargas1005@mail.com;San Isidro;2026-04-25;NULL
+1006;Jhonatan;Ramos;Cruz;jhonatan.ramos1006@mail.com;Los Olivos;2026-04-26;NULL
+1007;Valeria;Chavez;Lopez;valeria.chavez1007@mail.com;La Molina;2026-04-27;NULL
+1008;Bryan;Torres;Nunez;bryan.torres1008@mail.com;Ate;2026-04-28;NULL
+1009;Milagros;Salazar;NULL;milagros.salazar1009@mail.com;Independencia;2026-04-28;2026-05-30
+1010;Kevin;Paredes;Rios;kevin.paredes1010@mail.com;Comas;2026-04-29;NULL
+1011;Ana;Gutierrez;Morales;ana.gutierrez1011@mail.com;San Borja;2026-04-30;NULL
+1012;Luis;Mamani;Quispe;luis.mamani1012@mail.com;NULL;2026-04-30;NULL
+1013;Gabriela;Castillo;Vera;gabriela.castillo1013@mail.com;Jesus Maria;2026-05-01;NULL
+1014;Piero;Sanchez;Leon;piero.sanchez1014@mail.com;Chorrillos;2026-05-01;NULL
+1015;Katherine;Fernandez;Diaz;katherine.fernandez1015@mail.com;Magdalena;2026-05-02;NULL
+1016;Sergio;Cardenas;NULL;sergio.cardenas1016@mail.com;Villa El Salvador;2026-05-02;2026-06-25
+1017;Daniela;Rivera;Paz;daniela.rivera1017@mail.com;Pueblo Libre;2026-05-03;NULL
+1018;Anthony;Ortiz;Silva;anthony.ortiz1018@mail.com;San Miguel;2026-05-03;NULL
+1019;Rosa;Aguilar;Campos;rosa.aguilar1019@mail.com;Callao;2026-05-04;NULL
+1020;Christian;Vega;Herrera;christian.vega1020@mail.com;NULL;2026-05-04;NULL
+1021;Xiomara;Cruz;Ponce;xiomara.cruz1021@mail.com;Rimac;2026-05-04;NULL
+1022;Josue;Medina;Flores;josue.medina1022@mail.com;Barranco;2026-05-05;NULL
+1023;Brigitte;Espinoza;Ramos;brigitte.espinoza1023@mail.com;Surco;2026-05-05;NULL
+1024;Marco;Guerrero;Vidal;marco.guerrero1024@mail.com;San Isidro;2026-05-05;NULL
+1025;Yesenia;Palacios;NULL;yesenia.palacios1025@mail.com;Comas;2026-05-06;NULL
+1026;Omar;Reyes;Tapia;omar.reyes1026@mail.com;Ate;2026-05-06;NULL
+1027;Cristina;Ibanez;Roman;cristina.ibanez1027@mail.com;Miraflores;2026-05-07;NULL
+1028;Franco;Alvarado;Nina;franco.alvarado1028@mail.com;La Molina;2026-05-07;NULL
+1029;Lucero;Bravo;Suarez;lucero.bravo1029@mail.com;San Borja;2026-05-08;NULL
+1030;Jean;Zavala;Chavez;jean.zavala1030@mail.com;Los Olivos;2026-05-08;NULL
+1031;dsf;sdf;NULL;sdf@mmm;San Borja;2026-07-06;NULL
