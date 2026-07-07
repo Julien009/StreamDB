@@ -7,7 +7,7 @@ app = Flask(__name__)
 # ── Conexión SQL Server ───────────────────────────
 def conectar_sql():
     conn = pymssql.connect(
-        server='192.168.1.4',
+        server='10.200.173.113',
         database='PELICULAS_SERIES',
         user='streamdb_user',
         password='StreamDB2026!',
