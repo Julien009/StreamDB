@@ -137,6 +137,7 @@ o actualiza el nombre directamente en `templates/home.html`.
 
 
 \- \*\*Walter Garcia\*\* - Desarrollo principal
+\- \*\*Katherine Muñoz\*\* - Desarrollo principal
 
  - Big Data y Data Science
 
