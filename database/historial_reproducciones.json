@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6a40a9864abc82cd2709dce5"
+  },
+  "idUsuario": 1,
+  "usuario": "Walter Garcia",
+  "fecha": "2026-06-28",
+  "reproduccion": {
+    "idPelicula": 21,
+    "pelicula": "Shrek Tercero",
+    "genero": "Animacion",
+    "duracion_min": 93,
+    "minuto_pausado": 0,
+    "completada": false,
+    "calidad": "1080p"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a4c185b73a5a217f867dd0d"
+  },
+  "idUsuario": 1,
+  "usuario": "Walter Garcia",
+  "fecha": "2026-07-06",
+  "reproduccion": {
+    "idPelicula": 2,
+    "pelicula": "El Senor de los Anillos: Las Dos Torres",
+    "genero": "Fantasia",
+    "duracion_min": 179,
+    "minuto_pausado": 0,
+    "completada": false,
+    "calidad": "1080p"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a4c244d73a5a217f867dd15"
+  },
+  "idUsuario": 1,
+  "usuario": "Walter Garcia",
+  "fecha": "2026-07-06",
+  "reproduccion": {
+    "idPelicula": 23,
+    "pelicula": "WALL-E",
+    "genero": "Animacion",
+    "duracion_min": 98,
+    "minuto_pausado": 1,
+    "completada": false,
+    "calidad": "1080p"
+  }
+}]

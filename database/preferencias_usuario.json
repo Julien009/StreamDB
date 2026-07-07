@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "6a40a94b4abc82cd2709dcd3"
+  },
+  "idUsuario": 1,
+  "genero": "Thriller",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a40a94d4abc82cd2709dcd5"
+  },
+  "idUsuario": 1,
+  "genero": "Crimen",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a40a94f4abc82cd2709dcd7"
+  },
+  "idUsuario": 1,
+  "genero": "Fantasia",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a40a9504abc82cd2709dcd9"
+  },
+  "idUsuario": 1,
+  "genero": "Fantasia",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a40a9534abc82cd2709dcdb"
+  },
+  "idUsuario": 1,
+  "genero": "Thriller",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a40a9554abc82cd2709dcdd"
+  },
+  "idUsuario": 1,
+  "genero": "Thriller",
+  "fecha": "2026-06-28"
+}]

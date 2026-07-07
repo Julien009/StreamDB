@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6a40a9864abc82cd2709dce3"
+  },
+  "idUsuario": 1,
+  "idPelicula": 21,
+  "pelicula": "Shrek Tercero",
+  "dispositivo": "Web",
+  "tipo_evento": "Reproduccion iniciada",
+  "fecha": "2026-06-28"
+},
+{
+  "_id": {
+    "$oid": "6a4c185b73a5a217f867dd0b"
+  },
+  "idUsuario": 1,
+  "idPelicula": 2,
+  "pelicula": "El Senor de los Anillos: Las Dos Torres",
+  "dispositivo": "Web",
+  "tipo_evento": "Reproduccion iniciada",
+  "fecha": "2026-07-06"
+},
+{
+  "_id": {
+    "$oid": "6a4c244d73a5a217f867dd13"
+  },
+  "idUsuario": 1,
+  "idPelicula": 23,
+  "pelicula": "WALL-E",
+  "dispositivo": "Web",
+  "tipo_evento": "Reproduccion iniciada",
+  "fecha": "2026-07-06"
+}]

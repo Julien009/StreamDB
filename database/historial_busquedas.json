@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "6a17b7609f64338cc4a4cbff"
+  },
+  "idUsuario": 2,
+  "busqueda": "Accion",
+  "fecha": "2026-05-27"
+},
+{
+  "_id": {
+    "$oid": "6a17b7609f64338cc4a4cc00"
+  },
+  "idUsuario": 3,
+  "busqueda": "Series Netflix",
+  "fecha": "2026-05-27"
+},
+{
+  "_id": {
+    "$oid": "6a40a9664abc82cd2709dcdf"
+  },
+  "idUsuario": 1,
+  "busqueda": "happy three friends",
+  "resultados": 0,
+  "sin_resultado": true,
+  "fecha": "2026-06-28"
+}]

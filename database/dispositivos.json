@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "6a23dc445ba826d706c9205d"
+  },
+  "codigo_dispositivo": "DEV-004",
+  "tipo": "Tablet",
+  "sistema_operativo": "iPadOS",
+  "estado": "activo",
+  "fecha_registro": "2026-06-06"
+},
+{
+  "_id": {
+    "$oid": "6a23dc6e5ba826d706c9205f"
+  },
+  "codigo_dispositivo": "DEV-005",
+  "tipo": "Movil",
+  "sistema_operativo": "iOS",
+  "estado": "activo",
+  "fecha_registro": "2026-06-06"
+},
+{
+  "_id": {
+    "$oid": "6a40a9864abc82cd2709dce1"
+  },
+  "idUsuario": 1,
+  "codigo_dispositivo": "DEV-WEB-001",
+  "tipo": "PC / Laptop",
+  "sistema_operativo": "Windows 10",
+  "estado": "activo",
+  "fecha_registro": "2026-06-28"
+}]
